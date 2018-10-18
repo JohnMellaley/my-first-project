@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+}
+
+.menuitem i{
+    font-size:28px;
+    color: #ffffff;
+    display:inline;
+}
+
+.background {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  background-color: #00174F;
+  background: url(../images/croppedicon.png) center center/cover no-repeat;
+  /*background-image: url("../images/jagger2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;*/
+  
+}
+
+.background-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  }
