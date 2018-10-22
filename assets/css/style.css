@@ -9,12 +9,9 @@
 header{
     margin: 0;
     background-color: black;
-    /*border-style: double;
-    border-color: yellow;*/
 }
 
 .logo{
-    left:0;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -23,59 +20,55 @@ header{
     margin-left: 0;
     padding-left: 0;
     height: 75px;
-    
-}
-.title{
-    font-family: "Exo", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    margin: 0;
-    color: #ffffff;
-    background-color: #000000;
-    padding: 0;
-   
 }
 
-.title h1{
-    margin:0;
-    padding:0;
+/*----------------------------------social links------------------------------------------*/
+.social-links{
+    text-align: right;
 }
+
+.social-links i {
+    font-size:20px;
+    color: red;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+}
+
+.social-links i:hover{
+    color:white;
+}
+
+/*------------------------------main heading---------------------------*/
 
 .menuheader{
     padding:0;
     margin:0;
     background-color: #000000;
-    
-   
 }
 
-#nav{
-    background-color: #000000;
-   /* margin-left: 200px;*/
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-}
-
-#nav li{
-    display: inline;
-}
 
 .menuitem{
     margin-left: 150px;
     
 }
 
-.ui-menu-home{
-    margin-left:0;
+.menu-home{
+    margin-left:50px;
 }
+
+#nav li{
+    display: inline;
+}  
+
 
 .menuitem i{
     font-size: 28px;
     color: #ffffff;
     display:inline;
 }
+
 
 .menuitem span{
     color:#ffffff;
@@ -86,47 +79,56 @@ header{
     display: inline;
 }
 
+/*---------------------heading hover-----------------------------------*/
+i:hover, a:hover, span:hover{
+    color:red;
+}
+
+span:hover{
+    color:yellow;
+}
+/*---------------------------dropdown----------------------------------------*/
+.navbar-dropdown i{
+    color:red;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu-dropdown a{
+    color:red;
+}
 
 
+/*--------------------drop down hover --------------------------------*/
+.navbar-dropdown i:hover{
+    color:yellow;
+}
+
+.navbar-dropdown:hover .menu-dropdown{
+    display: block;
+}
+
+.menu-dropdown a:hover{
+    color: white;
+}
+
+/*--------------------------------background image--------------------------------*/
 .wallpaper{
     left:0;
-    background-image: url('../images/croppedjagger.png');
+    background-image: url('../images/RollingStone.png');
     background-repeat: no-repeat;
     background-size: auto;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
     height: 600px;
     width: 100%;
     background-position: center;
     background-color: black;
 }
 
-
-/*
-.dummy-wallpaper .wallpaper-container{
-  display: flex;
-  align-items: center; /* horizontal 
-  justify-content: center; /* vertical
-}
-
-.dummy-logo .wallpaper-container{
-  display: flex;
-  align-items: center; /* horizontal 
-  justify-content: center; /* vertical 
-}*/
-
-.inline-block{
-    display: inline-block;
-}
-
-.social-links{
-    text-align: right;
-}
-
-.social-links i{
-    font-size:28px;
-    color: red;
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-}
 
