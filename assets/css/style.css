@@ -131,4 +131,129 @@ span:hover{
     background-color: black;
 }
 
+/*----------------------------------band----------------------*/
+.bandbio{
+    margin: 0px;
+    padding:0px;
+    height: 200px;
+   /* display:table;*/
+}
+
+.bandimage{
+    background-image: url('../images/bandbio.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-position: left;
+    background-color: blue;
+    height: 200px;
+    
+    margin-right: 0;
+    border-right: 0;
+    position: relative;
+}
+
+.bandarticle{
+    margin-left: 0;
+    padding: 0;
+    background-color: blue;
+    height: 200px;
+    
+    z-index: 2;
+    
+}
+
+.bandarticle h1{
+    background-position: left;
+    margin-left: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #FF0000;
+    font-family: "roboto", sans-serif;
+}
+
+.bandarticle p{
+    background-position: left;
+    color:yellow;
+    font-size: medium;
+}
+
+.fact{
+    color:red;
+    font-size: medium;
+    font-family: "Exo" , "sans-serif";
+    font-weight: bold;
+     display: inline;
+     text-decoration: underline;
+
+}
+
+.fact-answer{
+    color:yellow;
+    font-size: medium;
+     display: inline;
+}
+
+
+.mjarticle{
+     height: 200px;
+     background-color: #ff4d4d;
+}
+
+.mjimage{
+    background-image: url('../images/jaggerbio.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-position: right;
+    background-color: #ff4d4d;
+    height: 200px;
+}
+
+.krimage{
+    background-image: url('../images/keith-richard.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    width: 150%;
+    background-position: center;
+    background-color: white;
+    height: 200px;
+    float: left;
+}
+
+.rwimage{
+    background-image: url('../images/rwbio.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    width: 150%;
+    background-position: center;
+    background-color: #66b3ff;
+    height: 200px;
+    border: double;
+    border-color: yellow;
+}
+
+.cwimage{
+    background-image: url('../images/charlie-watts.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    width: 150%;
+    background-position: center;
+    background-color: yellow;
+    height: 200px;
+}
+
 
