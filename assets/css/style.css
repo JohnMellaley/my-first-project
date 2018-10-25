@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700| Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 .uppercase{
     text-transform: uppercase ;
 }
 
-/*-------------------heading------------------*/
 
+/*-------------------heading------------------*/
+body{
+    overflow:scroll;
+}
 header{
     margin: 0;
     background-color: black;
@@ -47,13 +50,9 @@ header{
     margin:0;
     background-color: #000000;
 }
-
-
 .menuitem{
     margin-left: 150px;
-    
 }
-
 .menu-home{
     margin-left:50px;
 }
@@ -61,15 +60,11 @@ header{
 #nav li{
     display: inline;
 }  
-
-
 .menuitem i{
     font-size: 28px;
     color: #ffffff;
     display:inline;
 }
-
-
 .menuitem span{
     color:#ffffff;
     background-color: #000000;
@@ -121,55 +116,116 @@ span:hover{
     left:0;
     background-image: url('../images/RollingStone.png');
     background-repeat: no-repeat;
-    background-size: auto;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     height: 600px;
-    width: 100%;
     background-position: center;
     background-color: black;
 }
 
 /*----------------------------------band----------------------*/
+
 .bandbio{
-    margin: 0px;
-    padding:0px;
+    position: relative;
+    background-size: 100%;
+}
+
+.bandarticle{
+    background-color: blue;
     height: 200px;
-   /* display:table;*/
 }
 
 .bandimage{
     background-image: url('../images/bandbio.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-position: left;
+    background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     background-color: blue;
     height: 200px;
-    
-    margin-right: 0;
-    border-right: 0;
-    position: relative;
 }
 
-.bandarticle{
-    margin-left: 0;
-    padding: 0;
-    background-color: blue;
+.mjarticle{
+    background-color: #ff4d4d;
+    height: 210px;
+}
+
+.mjimage{
+    background-image: url('../images/jaggerbio.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-position: right;
+    background-color: #ff4d4d;
+    height: 210px; 
+   
+}
+
+.krarticale{
+    background-color:white;
     height: 200px;
-    
-    z-index: 2;
-    
+}
+.krimage{
+    background-image: url('../images/keith-richard.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+     background-color: white;
+    height: 200px; 
 }
 
-.bandarticle h1{
-    background-position: left;
-    margin-left: 0;
-    margin-top: 0;
-    text-transform: capitalize;
+.rwarticale{
+    background-color: #66b3ff;
+    height: 200px;
+}
+
+.rwimage{
+    background-image: url('../images/rwbio.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-position: right;
+    height: 200px;
+}
+
+.cwarticale{
+    background-color: yellow;
+    height: 240px;
+}
+
+.cwimage{
+    background-image: url('../images/charlie-watts.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-color: yellow;
+    height: 240px;
+}
+
+.name{
+    margin-top:0;
+    margin-bottom: 0;
+}
+.name h1{
+    display: inline;
+    text-shadow: 2px 2px #FF0000;
+    font-family: "roboto", sans-serif;
+}
+
+.name h3{
+    display: inline-block;
+    margin:20px;
     text-shadow: 2px 2px #FF0000;
     font-family: "roboto", sans-serif;
 }
@@ -180,6 +236,12 @@ span:hover{
     font-size: medium;
 }
 
+.bioparagraph p{
+    color: black;
+    font-size: medium;
+    overflow: auto;
+    width:100%;
+}
 .fact{
     color:red;
     font-size: medium;
@@ -187,7 +249,6 @@ span:hover{
     font-weight: bold;
      display: inline;
      text-decoration: underline;
-
 }
 
 .fact-answer{
@@ -197,63 +258,46 @@ span:hover{
 }
 
 
-.mjarticle{
-     height: 200px;
-     background-color: #ff4d4d;
+/*-----------------------------------------MEDIA-----------------------------------*/
+* {
+    box-sizing: border-box;
+}
+.row-gallery {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-.mjimage{
-    background-image: url('../images/jaggerbio.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-position: right;
-    background-color: #ff4d4d;
-    height: 200px;
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
 }
 
-.krimage{
-    background-image: url('../images/keith-richard.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    width: 150%;
-    background-position: center;
-    background-color: white;
-    height: 200px;
-    float: left;
-}
-
-.rwimage{
-    background-image: url('../images/rwbio.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    width: 150%;
-    background-position: center;
-    background-color: #66b3ff;
-    height: 200px;
-    border: double;
-    border-color: yellow;
-}
-
-.cwimage{
-    background-image: url('../images/charlie-watts.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    width: 150%;
-    background-position: center;
-    background-color: yellow;
-    height: 200px;
+.column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column-gallery {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-gallery {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
