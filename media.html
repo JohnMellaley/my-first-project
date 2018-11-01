@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
         <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
         <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -90,33 +91,72 @@
               
             </div>
         </section>
-         
-        <section class="container-fluid">
-            <div><h1>Gallery</h1></div>
-            <div class="row-gallery"> 
-              <div class="column-gallery">
-                <img src="/assets/images/backglass2.png" style="width:100%">
-                <img src="/assets/images/jagger.png" style="width:100%">
-                <img src="/assets/images/052617_rw.png" style="width:100%">
+
+      
+        <section>
+          <div class="bg-color">
+            <h1>Gallery</h1>
+            <div class="row-gallery container-fluid"> 
+              <div class="column-gallery"> 
+               <a href="/assets/images/backglass2.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/backglass2.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/jagger.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/jagger.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/052617_rw.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/052617_rw.png" alt="test"></img>
+               </a>
               </div>
+             
               <div class="column-gallery">
-                <img src="/assets/images/rolling.png" style="width:100%">
-                <img src="/assets/images/logo3.png" style="width:100%">
-                <img src="/assets/images/jw-etcanada.png" style="width:100%">
+                <a href="/assets/images/rolling.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/rolling.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/logo3.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/logo3.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/jw-etcanada.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/jw-etcanada.png" alt="test"></img>
+               </a>
               </div> 
               <div class="column-gallery">
-                <img src="/assets/images/rollingstone.png" style="width:100%">
-                <img src="/assets/images/croppedjagger.png" style="width:100%">
-                <img src="/assets/images/keith-richards-telegraph.png" style="width:100%">
+                 <a href="/assets/images/rollingstone.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/rollingstone.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/croppedjagger.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/croppedjagger.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/keith-richards-telegraph.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/keith-richards-telegraph.png" alt="test"></img>
+               </a>
               </div>
               <div class="column-gallery">
-                <img src="/assets/images/logo2.png" style="width:100%">
-                <img src="/assets/images/jagger6.png" style="width:100%">
-                <img src="/assets/images/manchester-billboard.png" style="width:100%">
+                 <a href="/assets/images/logo2.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/logo2.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/jagger6.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/jagger6.png" alt="test"></img>
+               </a>
+               <a href="/assets/images/manchester-billboard.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/manchester-billboard.png" alt="test"></img>
+               </a>
               </div>
             </div>
+          </div>
         </section>
-        </section>
+        
+        
+        <!-- fancyybox-->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+       <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+       <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="jquery.fancybox.min.js"></script>
+
+
+
+
            <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
         <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>

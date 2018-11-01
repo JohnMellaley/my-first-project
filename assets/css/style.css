@@ -7,6 +7,7 @@
 
 /*-------------------heading------------------*/
 body{
+    height: 100%;
     overflow:scroll;
 }
 header{
@@ -114,17 +115,46 @@ span:hover{
 /*--------------------------------background image--------------------------------*/
 .wallpaper{
     left:0;
-    background-image: url('../images/rollingstone.png');
+  /*  background-image: url('../images/rollingstone.png');*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-    height: 600px;
     background-position: center;
     background-color: black;
+    max-height: 500px !important;
 }
 
+
+/*-------------------------------------tour--------------------------------------*/
+.tour{
+    background-color: black;
+    text-align: center;
+    width:100%;
+}
+
+.tour h1{
+    margin:0;
+    color:white;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    
+}
+
+.tour p{
+    font-family: 'Spicy Rice', cursive;
+    color:white;
+    font-size: 32px;
+    padding-top: 30px;
+    margin:0 auto;
+}
+
+.tour h1:hover{
+    color:yellow;
+    text-decoration: none;
+}
 /*----------------------------------band----------------------*/
 
 .bandbio{
@@ -265,7 +295,13 @@ span:hover{
     -ms-flex-wrap: wrap; /* IE10 */
    /* flex-flow: row wrap;*/
     flex-wrap: wrap;
+    align-content:space-between;
+    justify-content: center;
+  /*  align-items: center;  to algn verticle*/
     padding: 0 4px;
+    border-bottom-color: red;
+    border-style: double;
+    background-color: grey;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -277,12 +313,18 @@ span:hover{
     max-width: 25%;
     padding: 0 4px;
     justify-content:space-around;
+    
 
 }
 
 .column-gallery img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.gallery-image{
+    height: 300px;
+    width: 100%;
 }
 
 .bg-color{
@@ -294,6 +336,7 @@ span:hover{
     font-weight: 500;
     font-style: oblique;
     color:white;
+    padding-top: 30px;
 }
 .center{
     margin: 75px auto;
