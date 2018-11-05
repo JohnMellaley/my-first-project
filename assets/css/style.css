@@ -19,11 +19,11 @@ header{
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: rgba(0,0,0);;
-    background-position: center;
+    background-color: rgba(0,0,0);
+    background-position: left;
     margin-left: 0;
     padding-left: 0;
-    height: 75px;
+    height: 40px;
 }
 
 /*----------------------------------social links------------------------------------------*/
@@ -45,7 +45,9 @@ header{
 }
 
 /*------------------------------main heading---------------------------*/
-
+/*.list-inline{
+    display:inline;
+}*/
 .menuheader{
     padding:0;
     margin:0;
@@ -122,9 +124,23 @@ span:hover{
     -o-background-size: 100% 100%;
     background-position: center;
     background-color: black;
-    max-height: 450px !important;
+    max-height: 150px !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+
+@media screen and (min-width: 768px) {
+    .wallpaper{
+            max-height: 300px !important;
+    }
+} 
+
+@media screen and (min-width: 991px)  {
+    .wallpaper{
+            max-height: 475px !important;
+    }
+}
 
 /*-------------------------------------tour--------------------------------------*/
 .tour{
@@ -161,11 +177,6 @@ span:hover{
     background-size: 100%;
 }
 
-.bandarticle{
-    background-color: blue;
-    height: 200px;
-}
-
 .bandimage{
     background-image: url('../images/bandbio.png');
     background-repeat: no-repeat;
@@ -177,9 +188,25 @@ span:hover{
     height: 200px;
 }
 
+.bandarticle{
+    background-color: blue;
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .bandarticle{
+            height: 200px !important;
+    }
+}
+
 .mjarticle{
     background-color: #ff4d4d;
-    height: 210px;
+    height: 600px;
+}
+
+@media screen and (min-width: 768px) {
+    .mjarticle{
+            height: 210px !important;}
 }
 
 .mjimage{
@@ -379,10 +406,12 @@ iframe{
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-position: center;
-    max-height: 300px !important;
+    max-height: 200px !important;
     width:100%;
+    vertical-align: top;
     background-color: white;
     padding-top:30px;
+  
 }
 
 .booking_statement{
@@ -415,9 +444,7 @@ select {
         max-width: 100%;
     }
     
-    .wallpaper{
-            max-height: 150px !important;
-    }
+    
 } 
 
 
@@ -429,9 +456,7 @@ select {
         max-width: 50%;
         
     }
-    .wallpaper{
-    max-height: 300px !important;
-    }
+    
 }
 
 
