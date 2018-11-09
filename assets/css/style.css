@@ -9,6 +9,7 @@
 body{
     height: 100%;
     overflow:scroll;
+    width:100%;
 }
 header{
     margin: 0;
@@ -159,7 +160,7 @@ span:hover{
 }
 
 .tour p{
-    font-family: 'Spicy Rice', cursive;
+    font-family: 'Spicy Rice', sans-serif;
     color:white;
     font-size: 32px;
     padding-top: 30px;
@@ -172,13 +173,9 @@ span:hover{
 }
 /*----------------------------------band----------------------*/
 
-.bandbio{
-    position: relative;
-    background-size: 100%;
-}
 
 .bandimage{
-    background-image: url('../images/bandbio.png');
+    background-image: url('../images/bio/bandbio.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
     -webkit-background-size:100% 100%;
@@ -190,10 +187,10 @@ span:hover{
 
 .bandarticle{
     background-color: blue;
-    height: 400px;
+  
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .bandarticle{
             height: 200px !important;
     }
@@ -201,16 +198,16 @@ span:hover{
 
 .mjarticle{
     background-color: #ff4d4d;
-    height: 600px;
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 992px) {
     .mjarticle{
             height: 210px !important;}
 }
 
 .mjimage{
-    background-image: url('../images/jaggerbio.png');
+    background-image: url('../images/bio/jaggerbio.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
@@ -222,28 +219,40 @@ span:hover{
    
 }
 
-.krarticale{
-    background-color:white;
-    height: 200px;
-}
+
 .krimage{
-    background-image: url('../images/keith-richard.png');
+    background-image: url('../images/bio/keith-richard.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
      background-color: white;
-    height: 200px; 
+     height: 200px; 
+}
+
+.krarticale{
+    background-color:white;
+}
+
+@media screen and (min-width: 992px) {
+    .krarticale{
+            height: 200px !important;}
 }
 
 .rwarticale{
     background-color: #66b3ff;
-    height: 200px;
+  
 }
 
+ @media screen and (min-width: 992px) {
+    .rwarticale{
+           height: 200px !important;} 
+} 
+
+
 .rwimage{
-    background-image: url('../images/rwbio.png');
+    background-image: url('../images/bio/rwbio.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
@@ -255,11 +264,15 @@ span:hover{
 
 .cwarticale{
     background-color: yellow;
-    height: 240px;
+}
+
+ @media screen and (min-width: 992px) {
+    .cwarticale{
+           height: 240px !important;} 
 }
 
 .cwimage{
-    background-image: url('../images/charlie-watts.png');
+    background-image: url('../images/bio/charlie-watts.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
@@ -275,14 +288,14 @@ span:hover{
 }
 .name h1{
     display: inline;
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 1px 1px black;
     font-family: "roboto", sans-serif;
 }
 
 .name h3{
     display: inline-block;
     margin:20px;
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 1px 1px black;
     font-family: "roboto", sans-serif;
 }
 
@@ -299,7 +312,7 @@ span:hover{
     width:100%;
 }
 .fact{
-    color:red;
+    color:black;
     font-size: medium;
     font-family: "Exo" , "sans-serif";
     font-weight: bold;
@@ -315,6 +328,79 @@ span:hover{
 
 
 /*-----------------------------------------MEDIA-----------------------------------*/
+
+
+.bg-color{
+    background-color: grey;
+}
+
+.bg-color h1{
+    font-family: Exo, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    color:white;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.audio_heading{
+    padding-top: 100px;
+}
+
+.video-section figcaption{
+    text-align: center;
+    font-family: 'Spicy Rice', sans-serif;
+    color: red;
+    font-size: x-large;
+}
+
+.video-section iframe{
+    width: 100%;
+    margin: 10px;
+}
+@media screen and (min-width: 768px) {
+    iframe{
+    height: 250px;
+    margin: 25px;
+}
+} 
+.audio_img{
+    background-image: url('../images/media/albumcover.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    height: 300px;
+    margin:0px;
+}
+
+@media (min-width: 768px){
+    .audio_img{
+        height: 650px;}
+}
+
+.audio-songs h3{
+    color:white;
+}
+.audio-songs h5{
+    font-family: 'Spicy Rice', sans-serif;
+    color: red;
+    margin-top: 25px;
+}
+
+.audio-songs audio{
+    width:90%;
+}
+
+.fancybox-caption{
+        visibility: visible;
+        direction: ltr;
+        opacity: 1;
+        position: absolute;
+        z-index: 99997;
+      }
+
 .row-gallery {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -333,10 +419,10 @@ span:hover{
 /* Create four equal columns that sits next to each other */
 .column-gallery {
     box-sizing: border-box;
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
     align-items: flex-end;
-    max-width: 25%;
+    max-width: 100%;
     padding: 0 4px;
     justify-content:space-around;
     
@@ -353,52 +439,38 @@ span:hover{
     width: 100%;
 }
 
-.bg-color{
-    background-color: grey;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other  */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .column-gallery {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;}
+} 
+
+
+/* Responsive layout - makes a four columns layout*/
+@media screen and (min-width: 992px)   {
+    .column-gallery {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;}
 }
 
-.bg-color h1{
-    font-family: Exo, sans-serif;
-    font-weight: 500;
-    font-style: oblique;
-    color:white;
-    padding-top: 30px;
-}
-.center{
-    margin: 75px auto;
-    height: 300px;
-}
 
-.bg-color h1{
-    margin-top: 0px;
-    background-color: grey;
-}
 
-.video-section figcaption{
-    margin-left: 100px;
-    font-family: Spicy+Rice, sans-serif;
-    font-family: 'Spicy Rice', cursive;
-    color: red;
-    font-size: x-large;
-    
-}
-iframe{
-    margin:20px 40px 20px;
-    height: 250px
-}
 
-.audio-songs h3{
-    color:white;
-}
-.audio-songs h5{
-    font-family: Spicy+Rice, sans-serif;
-    font-family: 'Spicy Rice', cursive;
-    color: red;
-    margin-top: 25px;
-}
+
 
 /*----------------------------contact page-----------------------------------------------------*/
 
+.contact{
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+/*
 .logo_contact{
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -411,21 +483,26 @@ iframe{
     vertical-align: top;
     background-color: white;
     padding-top:30px;
-  
-}
+}*/
 
 .booking_statement{
-    margin-left: 100px;
     font-family: 'Spicy Rice', cursive;
-    font-size: 32px;
+    font-size: 28px;
     color:red;
     text-align: center;
+    width:100%;
+}
+
+#form_heading{
+    margin-top:20px;
+    padding-top: 10px;
+    font-weight: 900;
 }
 
 .center_form{
-    width: 70%;
-    margin: 0 auto;
-    background-color: #ffffcc;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffff80;
 }
 
 select {
@@ -436,27 +513,10 @@ select {
 }
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 600 */
-@media screen and (max-width: 768px) {
-    .column-gallery {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+@media screen and (min-width: 992px)   {
+    .logo_contact{
+        height: 250px;
     }
-    
-    
-} 
-
-
-/* Responsive layout - makes a two column-layout instead of four columns 800*/
-@media screen and (min-width: 769px) and (max-width: 991px)  {
-    .column-gallery {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-        
-    }
-    
 }
 
 

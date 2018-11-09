@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
         <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
-        <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+   <!--     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">  -->
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
     </head>
     <body>
-                 <header class = "container-fluid">
-   
-                <div class="row hidden-xs col-xs-12 menuheader">
+           <header class = "container-fluid">
+                <div class="row hidden-xs hidden-sm col-xs-12 menuheader">
                         <ul  id="nav">
                             <li class ="menuitem uppercase col-xs-1 logo">
                             <li class ="menuitem uppercase col-xs-2"><a href="index.html"><i class="fa fa-home" aria-hidden = "true"></i><span>Home</span></a></li>
@@ -25,69 +25,77 @@
                                 <li><a target="_blank" href="https://twitter.com/RollingStones/"><i class="fa fa-twitter"></i></a></li>
                                 <li><a target="_blank" href="https://www.instagram.com/therollingstones/?hl=en"><i class="fa fa-instagram"></i></a></li>
                                 <li><a target="_blank" href="https://www.youtube.com/user/therollingstones"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
+                              </ul>
                         </ul>
                         
                 </div>
-             <div class="col-xs-1 visible-xs navbar-dropdown">
-			    	<i class="fa fa-bars fa-2x"></i>
-			    		<div class="menu-dropdown">
-			    			<a href="index.html">Home</a>
-			    			<a href="band.html">Band</a>
-			    			<a href="media.html">Media</a>
-			    			<a href="contact.html">Contact</a>
-			    		</div>
-			    	</i>
-			  </div>
-        </header>
-        <section>
-          <div class="bg-color">
-            <h1>Video</h1>
-                  <div class="center row container-fluid">
-                    <span class="video-section col-md-4">
-                      <figure>
-                        <iframe src="https://www.youtube.com/embed/O4irXQhgMqg?ecver=1" frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><p>Paint it Black</p></iframe>
-                        <figcaption>Paint it Black</figcaption>
-                       </figure>
-                    </span>
-                    <span class="video-section col-md-4">
-                      <figure>
-                        <iframe  src="https://www.youtube.com/embed/ZNaqBBjrIZw?ecver=1" frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     <figcaption>Wild Horses</figcaption>
-                     </figure>
-                    </span>
-                      <span class="video-section col-md-4">
-                      <figure>
-                        <iframe  src="https://www.youtube.com/embed/SGyOaCXr8Lw?ecver=1" frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <figcaption>Start me up</figcaption>
-                      </figure>
-                      </span>
-                  </div>
-              <h1>Audio</h1>
-              <div class="row">
-                  <div class ="col-md-9">
-                  <img src="/assets/images/albumcover.png" style="width:100%">
-                  </div>
-                  <div class ="audio-songs col-md-3">
-                    <h3>Sample of their greatest hits</h3>
-                    <h5>Sympathy for the devil</h5>
-                      <audio src="/assets/audio/sympathy_for_the_devil.mp3" controls></audio>
-                    <h5>Angie</h5>
-                      <audio src="/assets/audio/angie.mp3" controls></audio>
-                    <h5>Gimme Shelter</h5>
-                      <audio src="/assets/audio/gimme_shelter.mp3" controls></audio>
-                    <h5>(I Can't Get No) Satisfaction</h5>
-                    <audio src="/assets/audio/satisfaction.mp3" controls></audio>
-                    <h5>Miss You</h5>
-                    <audio src="/assets/audio/miss_you.mp3" controls></audio>
+                    <div class="row">
+                     <span class="col-xs-1 visible-xs visible-sm navbar-dropdown">
+			    	    <i class="fa fa-bars fa-2x"></i>
+			    		    <div class="menu-dropdown">
+    			    			<a href="index.html">Home</a>
+    			    			<a href="band.html">Band</a>
+    			    			<a href="media.html">Media</a>
+    			    			<a href="contact.html">Contact</a>
+			    	         </div>
+			    	  </span>
+			         
+			         </div> 
+        </header>      
+        <section class="video">
+            <div class="bg-color">
+                <h1>Video</h1>
+                <div class="container-fluid">
+                   <div class="row col-xs-12">
+                        <span class="video-section col-xs-12 col-sm-4">
+                          <figure>
+                            <iframe src="https://www.youtube.com/embed/O4irXQhgMqg?ecver=1" frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><p>Paint it Black</p></iframe>
+                            <figcaption>Paint it Black</figcaption>
+                           </figure>
+                        </span>
+                        <span class="video-section col-xs-12 col-sm-4">
+                          <figure>
+                            <iframe  src="https://www.youtube.com/embed/ZNaqBBjrIZw?ecver=1" frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <figcaption>Wild Horses</figcaption>
+                         </figure>
+                        </span>
+                        <span class="video-section col-xs-12 col-sm-4">
+                          <figure>
+                            <iframe  src="https://www.youtube.com/embed/SGyOaCXr8Lw?ecver=1" frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>Start me up</figcaption>
+                          </figure>
+                         </span>
+                     </div>
+                </div>
+             </div>
+            </section> 
+            <section class="audio">     
+               <div class="bg-color">
+                  <h1>Audio</h1>
+                 <div class="container-fluid">
+                   <div class="row col-xs-12">
+                      <div class ="col-xs-12 col-sm-9 audio_img"></div>
+                      <div class ="audio-songs col-xs-12 col-sm-3">
+                        <h3>Sample of their greatest hits</h3>
+                        <h5>Sympathy for the devil</h5>
+                          <audio src="/assets/audio/sympathy_for_the_devil.mp3" controls></audio>
+                        <h5>Angie</h5>
+                          <audio src="/assets/audio/angie.mp3" controls></audio>
+                        <h5>Gimme Shelter</h5>
+                          <audio src="/assets/audio/gimme_shelter.mp3" controls></audio>
+                        <h5>(I Can't Get No) Satisfaction</h5>
+                        <audio src="/assets/audio/satisfaction.mp3" controls></audio>
+                        <h5>Miss You</h5>
+                        <audio src="/assets/audio/miss_you.mp3" controls></audio>
+                      </div>
+                      
                   </div>
               </div>
-              
             </div>
-        </section>
+                </section>
 
       
         <section>
@@ -95,69 +103,79 @@
             <h1>Gallery</h1>
             <div class="row-gallery container-fluid"> 
               <div class="column-gallery"> 
-               <a href="/assets/images/backglass2.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/backglass2.png" alt="test"></img>
+               <a href="/assets/images/media/backglass2.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/backglass2.png" alt="test"></img>
                </a>
-               <a href="/assets/images/jagger.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/jagger.png" alt="test"></img>
+               <a href="/assets/images/media/jagger.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/jagger.png" alt="test"></img>
                </a>
-               <a href="/assets/images/052617_rw.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/052617_rw.png" alt="test"></img>
+               <a href="/assets/images/media/052617_rw.png" data-fancybox="gallery" data-caption="Ronnie Wood Playing Guitar">
+                 <img class="gallery-image" src="/assets/images/media/052617_rw.png" alt="Ronnie Wood Playing Guitar"></img>
                </a>
               </div>
              
               <div class="column-gallery">
-                <a href="/assets/images/rolling.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/rolling.png" alt="test"></img>
+                <a href="/assets/images/media/RSorginal.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/RSorginal.png" alt="test"></img>
                </a>
-               <a href="/assets/images/logo3.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/logo3.png" alt="test"></img>
+               <a href="/assets/images/media/rs-live-getty-cuba.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/rs-live-getty-cuba.png" alt="test"></img>
                </a>
-               <a href="/assets/images/jw-etcanada.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/jw-etcanada.png" alt="test"></img>
+               <a href="/assets/images/media/jw-etcanada.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/jw-etcanada.png" alt="test"></img>
                </a>
               </div> 
               <div class="column-gallery">
-                 <a href="/assets/images/rollingstone.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/rollingstone.png" alt="test"></img>
+                 <a href="/assets/images/media/rollingstone.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/rollingstone.png" alt="test"></img>
                </a>
-               <a href="/assets/images/croppedjagger.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/croppedjagger.png" alt="test"></img>
+               <a href="/assets/images/media/rs_dublin.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/rs_dublin.png" alt="test"></img>
                </a>
-               <a href="/assets/images/keith-richards-telegraph.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/keith-richards-telegraph.png" alt="test"></img>
+               <a href="/assets/images/media/rs_1969_us_tour.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/rs_1969_us_tour.png" alt="test"></img>
                </a>
               </div>
               <div class="column-gallery">
-                 <a href="/assets/images/logo2.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/logo2.png" alt="test"></img>
+                 <a href="/assets/images/media/keith-richards.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/keith-richards.png" alt="test"></img>
                </a>
-               <a href="/assets/images/jagger6.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/jagger6.png" alt="test"></img>
+               <a href="/assets/images/media/rs_1981_concert_sandiego.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/rs_1981_concert_sandiego.png" alt="test"></img>
                </a>
-               <a href="/assets/images/manchester-billboard.png" data-fancybox="gallery" data-caption="test">
-                 <img class="gallery-image" src="/assets/images/manchester-billboard.png" alt="test"></img>
+               <a href="/assets/images/media/manchester-billboard.png" data-fancybox="gallery" data-caption="test">
+                 <img class="gallery-image" src="/assets/images/media/manchester-billboard.png" alt="test"></img>
                </a>
               </div>
             </div>
           </div>
+          
         </section>
+         <footer class = "container-fluid">
+            <div class="row col-xs-12 visible-xs visible-sm">
+                <ul class ="list-inline social-links col-xs-12">
+                    <li><a target="_blank" href="https://www.facebook.com/therollingstones/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/RollingStones/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/therollingstones/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/therollingstones"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                        </div>
+                     
+        </footer>
         
         
+   
+</script>
         <!-- fancyybox-->
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
       <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
        <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     	<script src="jquery.fancybox.min.js"></script>
+    	  
 
-
-
-
-           <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
