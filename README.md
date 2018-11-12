@@ -134,14 +134,11 @@ In the design of this webpage I descided to use pen and paper to create my wiref
 #Deployment
 
 This web site is deployed on the GitHub platform
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+From clould9 it is pushed over to GitHub using the commands :
+get add .
+get commit -m "final version"
+git push
+Then use you git hub credentials to login. Once compete the files are sent to GitHub.
 
 #Credits
 

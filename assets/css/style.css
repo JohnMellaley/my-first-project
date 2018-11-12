@@ -6,21 +6,17 @@
 
 
 /*-------------------heading------------------*/
-body{
-    height: 100%;
-    overflow:scroll;
-    width:100%;
-}
+
 header{
     margin: 0;
-    background-color: rgba(0,0,0);
+    background-color: rgb(0,0,0);
 }
 
 .logo{
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: rgba(0,0,0);
+    background-color: rgb(0,0,0);
     background-position: left;
     margin-left: 0;
     padding-left: 0;
@@ -46,9 +42,7 @@ header{
 }
 
 /*------------------------------main heading---------------------------*/
-/*.list-inline{
-    display:inline;
-}*/
+
 .menuheader{
     padding:0;
     margin:0;
@@ -125,7 +119,7 @@ span:hover{
     -o-background-size: 100% 100%;
     background-position: center;
     background-color: black;
-    max-height: 150px !important;
+    max-height: 150px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -133,13 +127,13 @@ span:hover{
 
 @media screen and (min-width: 768px) {
     .wallpaper{
-            max-height: 300px !important;
+            max-height: 300px;
     }
 } 
 
 @media screen and (min-width: 991px)  {
     .wallpaper{
-            max-height: 475px !important;
+            max-height: 475px;
     }
 }
 
@@ -182,7 +176,7 @@ span:hover{
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-color: blue;
-    height: 200px;
+    height: 200px;    
 }
 
 .bandarticle{
@@ -192,7 +186,8 @@ span:hover{
 
 @media screen and (min-width: 992px) {
     .bandarticle{
-            height: 200px !important;
+            height: 200px !important; /*matching height to image for large screens. Smaller screens does not matter as image on top
+            of text */
     }
 }
 
@@ -203,7 +198,8 @@ span:hover{
 
 @media screen and (min-width: 992px) {
     .mjarticle{
-            height: 210px !important;}
+            height: 210px !important;}/*matching height to image for large screens. Smaller screens does not matter as image on top
+            of text */
 }
 
 .mjimage{
@@ -237,7 +233,8 @@ span:hover{
 
 @media screen and (min-width: 992px) {
     .krarticale{
-            height: 200px !important;}
+            height: 200px !important;}/*matching height to image for large screens. Smaller screens does not matter as image on top
+            of text */
 }
 
 .rwarticale{
@@ -247,7 +244,8 @@ span:hover{
 
  @media screen and (min-width: 992px) {
     .rwarticale{
-           height: 200px !important;} 
+           height: 200px !important;} /*matching height to image for large screens. Smaller screens does not matter as image on top
+            of text */
 } 
 
 
@@ -268,7 +266,8 @@ span:hover{
 
  @media screen and (min-width: 992px) {
     .cwarticale{
-           height: 240px !important;} 
+           height: 240px !important;} /*matching height to image for large screens. Smaller screens does not matter as image on top
+            of text */
 }
 
 .cwimage{
@@ -281,7 +280,7 @@ span:hover{
     background-color: yellow;
     height: 240px;
 }
-
+/* formatting band page */
 .name{
     margin-top:0;
     margin-bottom: 0;
@@ -343,27 +342,34 @@ span:hover{
     margin-top: 0px;
 }
 
-.audio_heading{
-    padding-top: 100px;
-}
 
+/*             Video section   */
 .video-section figcaption{
     text-align: center;
     font-family: 'Spicy Rice', sans-serif;
     color: red;
     font-size: x-large;
 }
-
+/* small screen videos should take up width of screen minus margin*/
 .video-section iframe{
     width: 100%;
     margin: 10px;
 }
+
+/*   define height for largre screens */
 @media screen and (min-width: 768px) {
     iframe{
     height: 250px;
     margin: 25px;
 }
 } 
+
+
+/*   Audio section    */
+
+.audio_heading{
+    padding-top: 100px;
+}
 .audio_img{
     background-image: url('../images/media/albumcover.png');
     background-repeat: no-repeat;
@@ -375,9 +381,10 @@ span:hover{
     margin:0px;
 }
 
+/*increase height for larger sreens */
 @media (min-width: 768px){
     .audio_img{
-        height: 650px;}
+        height: 650px;}   
 }
 
 .audio-songs h3{
@@ -393,23 +400,15 @@ span:hover{
     width:90%;
 }
 
-.fancybox-caption{
-        visibility: visible;
-        direction: ltr;
-        opacity: 1;
-        position: absolute;
-        z-index: 99997;
-      }
+/* galllery section----using flexbox */
 
 .row-gallery {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
-   /* flex-flow: row wrap;*/
     flex-wrap: wrap;
     align-content:space-between;
     justify-content: center;
-  /*  align-items: center;  to algn verticle*/
     padding: 0 4px;
     border-bottom-color: red;
     border-style: double;
@@ -425,20 +424,17 @@ span:hover{
     max-width: 100%;
     padding: 0 4px;
     justify-content:space-around;
-    
-
 }
-
+/*
 .column-gallery img {
     margin-top: 8px;
     vertical-align: middle;
-}
+}*/
 
 .gallery-image{
     height: 300px;
     width: 100%;
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other  */
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -459,9 +455,6 @@ span:hover{
 
 
 
-
-
-
 /*----------------------------contact page-----------------------------------------------------*/
 
 .contact{
@@ -470,20 +463,7 @@ span:hover{
     padding-right: 0;
     margin: 0;
 }
-/*
-.logo_contact{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-position: center;
-    max-height: 200px !important;
-    width:100%;
-    vertical-align: top;
-    background-color: white;
-    padding-top:30px;
-}*/
+
 
 .booking_statement{
     font-family: 'Spicy Rice', cursive;
