@@ -1,23 +1,21 @@
-#Rolling Stones code institute Front end only Website
-##Overview
+# Rolling Stones code institute Front end only Website
+## Overview
 
-The band is a 1960’s rock band and have around 50 years experience of performing live at numerous events around the world. The primary target audiences of the site are their fans and potential fans who wish to use the site to see and hear clips from their back catalogue, and any new material as it becomes available.
-Also, the band would like to use the site to showcase their music and publicise their availability to perform at events such as weddings and Christmas parties. Rolling stones also have a large social media presence and as such have at links to their Facebook, Twitter, Instagram and YouTube pages. 
+The band is a 1960’s rock band and have around 50 years experience of performing live at numerous events around the world. The primary target audiences of the site are their fans and potential fans who wish to use the site to see and hear clips from their back catalog, and any new material as it becomes available.
+Also, the band would like to use the site to showcase their music and publicize their availability to perform at events such as weddings and Christmas parties. Rolling stones also have a large social media presence and as such have at links to their Facebook, Twitter, Instagram and YouTube pages. 
 
 This website was created to be viewed over different devices from mobile to laptop. It was created with a mobile first approach.
 
-##UX
+## UX
 
-###What is this website for?
+### What is this website for?
 This website was created for both old and new fans of the Rolling Stones. With over 50 years on the road I wanted to provide fans with a website that would allow quick access to the best material the band has produced through both video and audio as well to capture some the incredible energy they give at each of there shows with some of the best images I could find.
 The website also dedicates one page to providing some background information on the band and its members with some funny antidotes to create an interest in the band.
 Once the fans view the material this should encourage fans either to contact the band to book them for an event or to attend a concert already scheduled. As part of promoting the band, the website has provided links to all the bands social media accounts.
 
-###User Stores
+### User Stores
 We have two types of people accessing the website. One is existing fans some of which could be following the band for over 50
 years and the second type would be newer and maybe younger fans who may have stumbled onto one of their songs and is looking for more information.
-
-
 
 **Existing and New fans.**
 
@@ -30,14 +28,13 @@ years and the second type would be newer and maybe younger fans who may have stu
 * Rolling Stones fans should be able to keep update with any new news and developments.
 * Stones fans should be able to find information about both the history of the band and its members.
 
-In the design of this webpage I descided to use pen and paper to create my wireframes, diagrams
+In the design of this web page I decided to use pen and paper to create my wire frames, diagrams
 
-###How does it work
+### How does it work
 
-
-##Features
+## Features
  
-###Existing Features
+### Existing Features
 
 * Header
     -Provides links to the band social media pages
@@ -49,23 +46,23 @@ In the design of this webpage I descided to use pen and paper to create my wiref
     -text that provides information on the Band and its current members.
     
 * Media page
-    -Has plenty of images (uses Fancybox to display) and video and audio files
+    -Has plenty of images (uses Flexbox to display and Fancybox to move through the images) and video and audio files
 
 * Contact page
     -form for fans to provide information needed for the booking of the band and a submit button to allow the user to submit the information to be processed
 
-###Features Left to Implement
+### Features Left to Implement
     -none
 
 ## Some the tech used includes:
-- **HTML**, **CSS** and **Javascript**
+- **HTML**, **CSS**.
   - Base languages used to create website
 
 - [Cloud9](https://aws.amazon.com/cloud9/)
     - We use **Cloud9** to build our web pages
 
 - [Bootstrap](http://getbootstrap.com/)
-    - We use **Bootstrap** to give our project a simple, responsive layout. The implmentation of the Carousel
+    - We use **Bootstrap** to give our project a simple, responsive layout. The implementation of the grid, Carousel etc.
 
 - [fancybox](http://fancybox.net/home)
     - Using **Fancybox** to display the gallery
@@ -114,54 +111,47 @@ In the design of this webpage I descided to use pen and paper to create my wiref
 
 ### Band page
 - On small screen the layout goes image to text, image to text the whole way down
-- On medium to large screen the layout is firstly image with text on the right as an aside and on the next row the text displays first and then the image. This patter continues till the end switching the images and text from left to right and vice versa
+- On medium to large screen the layout is firstly image with text on the right as an aside and on the next row the text displays first and then the image. This patter continues till the end switching the images and text from left to right and vice versa.
 
 ### Media page
 - On Small screens the videos display one on top of the other
 - On medium to large screens videos are displayed on the horizontal.
 - On Small screens the audio image is displayed on top of the audio controls.
 - On medium to large screens the image is displayed to the left of the audio controls.
-- The gallery images are display one at time on mobile devices. ON Ipads two at a time and laptops
+- The gallery images are display one at time on mobile devices. ON IPads two at a time and laptops
              4 on each row.
     
 ### Contact page
 - On large screens the 'Your details' and 'Event details' are display side by side.
 - On small medium screens  'Your details' are displayed on top of'Event details'
 
+# Deployment
 
-#Interesting bugs or problems
+This web site is deployed on the GitHub platform.
+https://johnmellaley.github.io/my-first-project/
 
-#Deployment
+# Credits
 
-This web site is deployed on the GitHub platform
-From clould9 it is pushed over to GitHub using the commands :
-get add .
-get commit -m "final version"
-git push
-Then use you git hub credentials to login. Once compete the files are sent to GitHub.
-
-#Credits
-
-##Content
+## Content
 The text in the band page came from https://www.factinate.com - 42 Satisfying Facts About The Rolling Stones was from the Wikipedia the Rolling Stones page
 
-#Media
-##Photos       
-###Logo on header   
+# Media
+## Photos       
+### Logo on header   
 - logo.png was obtained from www.desktopbackground.org
 
-###Index Page
+### Index Page
 - Rollingstone.png was obtained from www.teleagraph.co.uk
 - manchester-billboard.png was obtained from  www.billboard.com
-- logo2.png was obtained from
-    
-###Band Page
+- logo2.png was obtained from www.pininterest.com.
+
+### Band Page
 - bandbio.png was obtained from https://www.pinterest.ie/pin/357543657892900699/
 - charlie-watts.png was obtained from https://www.pinterest.ie/pin/425519864774663872/
 - jaggerbio.png was obtained from https://www.cartoonstock.com/directory/m/mick_jagger.asp
 - keith-richard.png was obtained from https://fineartamerica.com/shop/posters/keith+richard
 - rwbio.png was obtained from https://www.pinterest.ie/pin/411657222183723848/
-- 
+
 ### Media Page
 - albumcover.png was obtained from https://www.pinterest.ie/pin/534872893226202547/
 - backglass2.png was obtained from http://www.pinballnews.com/games/rollingstones/
@@ -176,28 +166,22 @@ The text in the band page came from https://www.factinate.com - 42 Satisfying Fa
 - rs_1981_concert_sandiego.png.png was obtained from https://www.sandiego.gov/digital-archives-photos/1981-rolling-stones-concert-jack-murphy-stadium
 - manchester-billboard.png was obtained from www.billboard.com
 
-###Contact Page
+### Contact Page
 - logo3.png was obtained from http://getdrawings.com/rolling-stones-drawing
-- 
-##Videos
 
-###Media page
-####The three rolling stones videos were collected from YouTube
+## Videos
+
+### Media page
+#### The three rolling stones videos were collected from YouTube
 - https://www.youtube.com/watch?time_continue=16&v=O4irXQhgMqg
 - https://www.youtube.com/watch?v=ZNaqBBjrIZw
-- https://www.youtube.com/watch?v=SGyOaCXr8Lw
-    
-##Audio
-###The MP3 files where taken from Youtube and the songs are:
+- https://www.youtube.com/watch?v=SGyOaCXr8Lw.
+
+## Audio
+
+### The MP3 files where taken from Youtube and the songs are:
 - Sympathy for the devil
 - Gimme Shelter
 - Satisfaction
 - Angie
-- Miss YouTube
--
-
-#Acknowledgements
-
-
-
-
+- Miss You

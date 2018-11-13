@@ -41,6 +41,9 @@ header{
     color:white;
 }
 
+.list-inline{
+    display:inline;
+}
 /*------------------------------main heading---------------------------*/
 
 .menuheader{
@@ -85,8 +88,9 @@ span:hover{
 }
 
 .menu-dropdown {
-    display: none;
-    position: absolute;
+     background-color: black;
+     position: absolute;
+     display: none;
     z-index: 1;
 }
 
@@ -108,6 +112,11 @@ span:hover{
     color: white;
 }
 
+
+.bg-footer{
+    background-color: black;
+}
+
 /*--------------------------------background image--------------------------------*/
 .wallpaper{
     left:0;
@@ -123,7 +132,6 @@ span:hover{
     padding-left: 0;
     padding-right: 0;
 }
-
 
 @media screen and (min-width: 768px) {
     .wallpaper{
@@ -328,7 +336,7 @@ span:hover{
 
 /*-----------------------------------------MEDIA-----------------------------------*/
 
-
+/*---------------styling media section-------------------------*/
 .bg-color{
     background-color: grey;
 }
@@ -366,10 +374,11 @@ span:hover{
 
 
 /*   Audio section    */
-
 .audio_heading{
     padding-top: 100px;
 }
+
+/* audio image */
 .audio_img{
     background-image: url('../images/media/albumcover.png');
     background-repeat: no-repeat;
@@ -387,6 +396,7 @@ span:hover{
         height: 650px;}   
 }
 
+/*  formatin the audio section */
 .audio-songs h3{
     color:white;
 }
@@ -400,8 +410,7 @@ span:hover{
     width:90%;
 }
 
-/* galllery section----using flexbox */
-
+/*   flexbox */
 .row-gallery {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -410,12 +419,10 @@ span:hover{
     align-content:space-between;
     justify-content: center;
     padding: 0 4px;
-    border-bottom-color: red;
-    border-style: double;
     background-color: grey;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Flexbox with a Mobile first approach -> images will display on top of each other */
 .column-gallery {
     box-sizing: border-box;
     -ms-flex: 100%; /* IE10 */
@@ -424,17 +431,22 @@ span:hover{
     max-width: 100%;
     padding: 0 4px;
     justify-content:space-around;
+    
+
 }
-/*
+
 .column-gallery img {
     margin-top: 8px;
     vertical-align: middle;
-}*/
+}
 
+/*---------keeps images in gallery the same size  */
 .gallery-image{
     height: 300px;
     width: 100%;
 }
+
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other  */
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -473,7 +485,7 @@ span:hover{
     width:100%;
 }
 
-#form_heading{
+.form_heading{
     margin-top:20px;
     padding-top: 10px;
     font-weight: 900;
